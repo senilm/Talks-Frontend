@@ -32,7 +32,7 @@ const AdvertWidget = () => {
           width="100%"
           height="auto"
           alt="advert"
-          src="https://talks-backend.vercel.app/assets/travel.jpg"
+          src="https://res-console.cloudinary.com/dcr1lettc/thumbnails/transform/v1/image/upload/Y19saW1pdCxoXzE2MDAsd18xNjAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/ZGpzOWpxY2wwM2diYWV4OWZmNW8=/template_primary"
           style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
           loading="lazy"
         />

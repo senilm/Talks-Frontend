@@ -30,10 +30,10 @@ const DisplayEachComment = ({ userId, commentContent,commentId,DeleteComment,pos
     <>
       {isLoading ? (
         <>
-          <FlexBetween my="0.75rem" gap={2}>
+          <Box sx={{display:"flex"}} my="0.75rem" gap={2}>
             <Skeleton circle width={50} height={50} />
             <Skeleton width={200} height={24} />
-          </FlexBetween>
+          </Box>
         </>
       ) : (
         <>
