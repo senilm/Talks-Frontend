@@ -14,7 +14,7 @@ const DisplayEachComment = ({ userId, commentContent,commentId,DeleteComment,pos
   const token = useSelector((state) => state.token);
   const {_id} = useSelector((state) => state.user);
   const getUser = async () => {
-    const response = await fetch(`https://talks-hrgs.onrender.com/users/${userId}`, {
+    const response = await fetch(`https://talks-backend.vercel.app/users/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -32,7 +32,7 @@ const DisplayEachComment = ({ userId, commentContent,commentId,DeleteComment,pos
         <>
           <FlexBetween my="0.75rem" gap={2}>
             <Skeleton circle width={50} height={50} />
-            <Skeleton width={380} height={24} />
+            <Skeleton width={200} height={24} />
           </FlexBetween>
         </>
       ) : (

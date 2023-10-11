@@ -23,7 +23,7 @@ const Friend = ({friendId, name, subtitle, userPicture})=>{
     const isFriend = friends.find((friend) => friend._id === friendId);
     const patchFriend = async() =>{
         const response = await fetch(
-            `https://talks-hrgs.onrender.com/users/${_id}/${friendId}`,
+            `https://talks-backend.vercel.app/users/${_id}/${friendId}`,
             {
                 method:"PATCH",
                 headers:{

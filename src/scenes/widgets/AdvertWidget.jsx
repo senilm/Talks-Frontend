@@ -32,7 +32,7 @@ const AdvertWidget = () => {
           width="100%"
           height="auto"
           alt="advert"
-          src="https://talks-hrgs.onrender.com/assets/travel.jpg"
+          src="https://talks-backend.vercel.app/assets/travel.jpg"
           style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
           loading="lazy"
         />

@@ -27,7 +27,7 @@ const UserWidget = ({ userId, picture, setIsLoading }) => {
 
   const getUser = async () => {
     try {
-      const response = await fetch(`https://talks-hrgs.onrender.com/users/${userId}`, {
+      const response = await fetch(`https://talks-backend.vercel.app/users/${userId}`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });
