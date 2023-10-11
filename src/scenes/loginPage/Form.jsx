@@ -123,7 +123,7 @@ const Form = () => {
     return (
         isLoading 
             ? 
-        (<div style={{ marginLeft:'210px'}}>
+        (<div style={{ width:'100%', height:'70%', margin:"0 auto"}}>
             <ButtonLoader/>
             </div>)
         :
