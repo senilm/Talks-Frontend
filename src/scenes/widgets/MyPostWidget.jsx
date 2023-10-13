@@ -69,7 +69,7 @@ const MyPostWidget = ({ picture }) => {
                         width: "100%",
                         backgroundColor: palette.neutral.light,
                         borderRadius: "2rem",
-                        padding: "1rem 2rem"
+                        padding: "1rem 1.2rem"
                     }}
                 />
             </FlexBetween>
