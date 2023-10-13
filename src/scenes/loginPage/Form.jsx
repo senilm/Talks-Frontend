@@ -49,7 +49,7 @@ const initialValuesLogin = {
     password: "",
 }
 
-const Form = () => {
+const Form = ({setDisplay}) => {
     const [pageType, setPageType] = useState("login")
     const [isLoading, setIsLoading] = useState(false)
     const { palette } = useTheme();
@@ -68,7 +68,7 @@ const Form = () => {
             formData.append(value, values[value])
         }
         formData.append("picture", values.picture.path)
-
+        setDisplay(prev => !prev)
         setIsLoading(true)
        try {
         const savedUserResponse = await fetch(
@@ -91,6 +91,7 @@ const Form = () => {
     }
 
     const login = async(values, onSubmitProps) =>{
+        setDisplay(prev => !prev)
         setIsLoading(true)
         const loggedInResponse = await fetch(
             'https://talks-backend.onrender.com/auth/login',
