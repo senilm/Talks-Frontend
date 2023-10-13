@@ -62,7 +62,7 @@ const MyPostWidget = ({ picture }) => {
             <FlexBetween gap='1.5rem'>
                 {picture ? <UserImage image={picture.url}/> : <Skeleton circle height={55} width={55} /> }
                 <InputBase
-                    placeholder="What's on your mind?"
+                    placeholder="Caption required to Post"
                     onChange={(e) => setPost(e.target.value)}
                     value={post}
                     sx={{
