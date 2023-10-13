@@ -11,7 +11,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
   const [isLoading, setIsLoading] = useState(true); 
 
   const getPosts = async () => {
-    const response = await fetch("https://talks-backend.vercel.app/posts", {
+    const response = await fetch("https://talks-backend.onrender.com/posts", {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -22,7 +22,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `https://talks-backend.vercel.app/posts/${userId}/posts`,
+      `https://talks-backend.onrender.com/posts/${userId}/posts`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

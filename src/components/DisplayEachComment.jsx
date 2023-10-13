@@ -14,7 +14,7 @@ const DisplayEachComment = ({ userId, commentContent,commentId,DeleteComment,pos
   const token = useSelector((state) => state.token);
   const {_id} = useSelector((state) => state.user);
   const getUser = async () => {
-    const response = await fetch(`https://talks-backend.vercel.app/users/${userId}`, {
+    const response = await fetch(`https://talks-backend.onrender.com/users/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });

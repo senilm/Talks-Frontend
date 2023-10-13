@@ -72,7 +72,7 @@ const Form = () => {
         setIsLoading(true)
        try {
         const savedUserResponse = await fetch(
-            'https://talks-backend.vercel.app/auth/register',
+            'https://talks-backend.onrender.com/auth/register',
             {
                 method:"POST",
                 body:formData,
@@ -93,7 +93,7 @@ const Form = () => {
     const login = async(values, onSubmitProps) =>{
         setIsLoading(true)
         const loggedInResponse = await fetch(
-            'https://talks-backend.vercel.app/auth/login',
+            'https://talks-backend.onrender.com/auth/login',
             {
                 method:"POST",
                 headers:{"Content-Type":"application/json"},

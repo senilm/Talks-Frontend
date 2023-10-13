@@ -45,7 +45,7 @@ const MyPostWidget = ({ picture }) => {
         setIsLoading(true)
 
         const response = await fetch(
-            `https://talks-backend.vercel.app/posts`, {
+            `https://talks-backend.onrender.com/posts`, {
             method: "POST",
             headers: { Authorization: `Bearer ${token}` },
             body: formData

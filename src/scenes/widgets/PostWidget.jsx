@@ -33,7 +33,7 @@ const PostWidget = ({
   const primary = palette.primary.main;
 
   const patchLike = async () => {
-    const response = await fetch(`https://talks-backend.vercel.app/posts/${postId}/like`, {
+    const response = await fetch(`https://talks-backend.onrender.com/posts/${postId}/like`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -47,7 +47,7 @@ const PostWidget = ({
 
   const AddComments = async (commentContent) => {
     const response = await fetch(
-      `https://talks-backend.vercel.app/posts/${postId}/comment`,
+      `https://talks-backend.onrender.com/posts/${postId}/comment`,
       {
         method: "PATCH",
         headers: {
@@ -63,7 +63,7 @@ const PostWidget = ({
 
   const DeleteComment = async (commentId) => {
     const response = await fetch(
-      `https://talks-backend.vercel.app/posts/${postId}/comment/${commentId}`,
+      `https://talks-backend.onrender.com/posts/${postId}/comment/${commentId}`,
       {
         method: "DELETE",
         headers: {
