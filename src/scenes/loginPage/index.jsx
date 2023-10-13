@@ -32,7 +32,7 @@ const LoginPage = () => {
         backgroundColor={theme.palette.background.alt}
       >
         <Typography fontWeight="500" variant="h5" sx={{mb:"1.5rem"}}>
-          Welcome to TALKS {display && <p style={{color:"#51E5FF",wordBreak:"break-word"}}>[close the tab and try again if no response received]</p>}
+          Welcome to TALKS {display && <p style={{color:"#51E5FF",wordBreak:"break-word"}}>[Please wait a minute, Server is Starting...]</p>}
         </Typography>
         <Form setDisplay={setDisplay}/>
 
