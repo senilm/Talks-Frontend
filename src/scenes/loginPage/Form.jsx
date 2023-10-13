@@ -80,6 +80,7 @@ const Form = ({setDisplay}) => {
             }
         );
         const savedUser = await savedUserResponse.json();
+        setDisplay(prev => !prev)
         setIsLoading(false)
         onSubmitProps.resetForm();
         if(savedUser){
@@ -103,6 +104,7 @@ const Form = ({setDisplay}) => {
             }
         );
         const loggedIn = await loggedInResponse.json();
+        setDisplay(prev => !prev)
         setIsLoading(false)
         onSubmitProps.resetForm();
         if(loggedIn){
